@@ -27,10 +27,6 @@ This project was developed using cutting edge front-end technologies.
 - [Next.js](https://nextjs.org/)
 
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ---
 
 Made with 💜 by Gerson Lamela 👋 [Check out my LinkedIn](https://www.linkedin.com/in/gersonlamela)
