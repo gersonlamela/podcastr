@@ -29,12 +29,6 @@ type EpisodeProps = {
 
 export default function Episode({ episode }: EpisodeProps ) {
 /*   const { play } = usePlayer() */
-  const router = useRouter()
-
-  if (router.isFallback) {
-    return <p>Carregando...</p>
-  }
-
   return (
     <div className={styles.episode}>
       <Head>
