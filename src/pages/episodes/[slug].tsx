@@ -10,6 +10,8 @@ import styles from './episode.module.scss'
 import { useRouter } from 'next/router'
 /* import { usePlayer } from "../../contexts/PlayerContext"; */
 import Head from "next/head";
+import { useContext } from "react";
+import { PlayerContext, usePlayer } from "../../contexts/PlayerContext";
 
 type Episode = {
   id: string;
@@ -28,7 +30,7 @@ type EpisodeProps = {
 }
 
 export default function Episode({ episode }: EpisodeProps ) {
-/*   const { play } = usePlayer() */
+  const { play } = usePlayer();
   return (
     <div className={styles.episode}>
       <Head>
@@ -47,7 +49,7 @@ export default function Episode({ episode }: EpisodeProps ) {
           src={episode.thumbnail}
           objectFit="cover"
         />
-        <button>
+        <button type="button" onClick={() => play(episode)}>
           <img src="/play.svg" alt="Tocar episódio"/>
         </button>
       </div>
